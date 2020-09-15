@@ -27,10 +27,12 @@ public class Game implements Serializable{
 	private String title;
 	private Platform platform;
 	
+	//@JsonIgnore //para  nao gerar um looping infinito quando tem o relacionamento manytoone
 	@ManyToOne
 	@JoinColumn(name = "genre_id")
 	private Genre genre; //mapear o relacionamento de chave estrangeira
 	
+	//@JsonIgnore
 	@OneToMany(mappedBy = "game")
 	private List<Record> records = new ArrayList<>();
 	
