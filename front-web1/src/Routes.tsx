@@ -6,6 +6,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";  //importar o s
 import Header from './components/header';
 import Home from './pages/Home';
 import Records from './pages/Records';
+import Charts from './pages/Charts'
 
 //quando digitar / no browser ja cai direto na pagina home
 const Routes = () => (
@@ -17,6 +18,9 @@ const Routes = () => (
             </Route>
             <Route path='/records'> 
                 <Records />
+            </Route>
+            <Route path='/charts'> 
+                <Charts />
             </Route>
         </Switch>
     </BrowserRouter>
