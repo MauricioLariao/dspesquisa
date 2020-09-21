@@ -7,8 +7,8 @@ import { formatDate } from './helpers';
 import Pagination from './Pagination';
 import Filters from '../../components/Filters';
 
-//const BASE_URL = 'http://localhost:8080' //desenv
-const BASE_URL = 'https://dspesquisa-mau.herokuapp.com';
+const BASE_URL = 'http://localhost:8080' //desenv
+//const BASE_URL = 'https://dspesquisa-mau.herokuapp.com';
 
  //logica para fazer a integracao com a api do backend
 const Records = () => {
