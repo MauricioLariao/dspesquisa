@@ -21,7 +21,8 @@ const initialPieData = {
     series: []
 }
 
-const BASE_URL = 'http://localhost:8080'
+//const BASE_URL = 'http://localhost:8080' //desenv
+const BASE_URL = 'https://dspesquisa-mau.herokuapp.com';
 
 const Charts = () =>{
     //useState -> tem uma variavel e a funcao que atualiza a variavel
